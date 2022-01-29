@@ -13,5 +13,6 @@ public class Instruction
 		Console.WriteLine("");
 		Console.WriteLine("Press Any Key to Continue");
 		Console.ReadKey();
+		mainMenu.TheMainMenu();
 	}
 }
