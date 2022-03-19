@@ -2,6 +2,10 @@
 
 public class MainMenu
 {
+    Random rnd = new Random();
+    public int myNumber = 0;
+    public int numberOfAttempts = 0;
+
     public void TheMainMenu()
     {
         var c2 = new Instruction();
@@ -26,12 +30,12 @@ public class MainMenu
 
         else if (selection == '3')
         {
-
+            
         }
 
         else
         {
-
+            TheMainMenu();
         }
 
     }
@@ -50,19 +54,27 @@ public class MainMenu
 
         if (difficultySelection == '1')
         {
-
+            myNumber = rnd.Next(10);
+            numberOfAttempts = 3;
+            c1.TheGameEasy();
         } 
         else if (difficultySelection == '2')
         {
-
+            myNumber = rnd.Next(0, 100);
+            numberOfAttempts = 3;
+            c1.TheGameMedium();
         }
         else if (difficultySelection == '3')
         {
-
+            myNumber = rnd.Next(0, 255);
+            numberOfAttempts = 5;
+            c1.TheGameHard();
         }
         else if (difficultySelection == '4')
         {
-
+            myNumber = rnd.Next(0, 1000);
+            numberOfAttempts = 5;
+            c1.TheGameImpossible();
         }
         else 
         {

@@ -6,6 +6,11 @@
     <RootNamespace>Guess_The_Number</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>d2x_CRVY_400x400.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="d2x_CRVY_400x400.ico" />
+  </ItemGroup>
 
 </Project>
